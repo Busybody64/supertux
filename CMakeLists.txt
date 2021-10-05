@@ -541,6 +541,8 @@ else()
   set(TINYGETTEXT_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 endif()
 
+message(WARNING "SDL INCLUDE DIRS: ${SDL2_INCLUDE_DIRS}")
+
 set(TINYGETTEXT_PREFIX ${CMAKE_BINARY_DIR}/tinygettext/)
 ExternalProject_Add(tinygettext
   SOURCE_DIR "${CMAKE_SOURCE_DIR}/external/tinygettext/"
